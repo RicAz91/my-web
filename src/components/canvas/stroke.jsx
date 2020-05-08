@@ -67,16 +67,16 @@ if(ranX === undefined){
 
     }
     else if(this.state.x < this.state.w/2 && this.state.y > this.state.h/2){
-      ranX = -(this.state.w/2 - this.state.x);
+      ranX = -(this.state.w/2 - this.state.x)/10;
       ranY =  this.state.y/30
     }
     else if(this.state.x > this.state.w/2 && this.state.y < this.state.h/2){
       ranX = this.state.x/30;
-      ranY = -(this.state.h/2-this.state.y)/30
+      ranY = -(this.state.h/2 - this.state.y)/10
     }
     else {
-      ranX =  -(this.state.w/2 - this.state.x)/30;
-      ranY =  -(this.state.h/2 - this.state.y)/30
+      ranX =  -(this.state.w/2 - this.state.x)/10;
+      ranY =  -(this.state.h/2 - this.state.y)/10
     }
   }
       var createCount = this.random(1, 3);
