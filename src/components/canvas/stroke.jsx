@@ -161,21 +161,27 @@ draw(){
         this.state.lightning.splice(i, 1);
       }
   
-      ctx.strokeStyle = 'rgba(255, 255, 255)';
+      
       ctx.lineWidth = 1;
-      if (this.random(0, 15) === 0) {
-        
-        ctx.lineWidth = 6;
-      }
-      if (this.random(0, 30) === 0) {
-        
-        ctx.lineWidth = 8;
-      }
-  
-      ctx.beginPath();
+       ctx.beginPath();
       //ctx.moveTo(500, 500);
       for (var pc = 0; pc < light.path.length; pc++) {
-        ctx.lineTo(light.path[pc].x, light.path[pc].y);
+
+        if(pc%4 === 0){
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = 'rgba(255,192,203)';
+          ctx.lineTo(light.path[pc].x, light.path[pc].y);
+        }
+        else if(pc%3 === 0){
+          ctx.lineWidth = 1.5;
+          ctx.strokeStyle = 'rgba(255,200,200)';
+          ctx.lineTo(light.path[pc].x, light.path[pc].y);
+        }
+        else{
+          ctx.lineWidth = 1;
+          ctx.strokeStyle = 'rgba(150,150,203)';
+          ctx.lineTo(light.path[pc].x, light.path[pc].y);
+        }
       }
       // if (Math.floor(this.random(0, 30)) === 1) { //to fos apo piso
       //   ctx.fillStyle = 'rgba(255, 255, 255, ' + this.random(1, 3) / 100 + ')';
