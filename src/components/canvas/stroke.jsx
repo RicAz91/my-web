@@ -169,17 +169,17 @@ draw(){
 
         if(pc%4 === 0){
           ctx.lineWidth = 2;
-          ctx.strokeStyle = 'rgba(255,192,203)';
+          ctx.strokeStyle = 'rgba(010,192,203)';
           ctx.lineTo(light.path[pc].x, light.path[pc].y);
         }
         else if(pc%3 === 0){
           ctx.lineWidth = 1.5;
-          ctx.strokeStyle = 'rgba(255,200,200)';
+          ctx.strokeStyle = 'rgba(300,152,200)';
           ctx.lineTo(light.path[pc].x, light.path[pc].y);
         }
         else{
           ctx.lineWidth = 1;
-          ctx.strokeStyle = 'rgba(150,150,203)';
+          ctx.strokeStyle = 'rgba(200,20,203)';
           ctx.lineTo(light.path[pc].x, light.path[pc].y);
         }
       }
