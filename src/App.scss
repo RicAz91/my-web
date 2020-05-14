@@ -19,6 +19,10 @@
 // }
 
 .App-header {
+  z-index: 1; 
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -27,6 +31,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header-over{
+  z-index: 99;
+
 }
 
 // .App-link {

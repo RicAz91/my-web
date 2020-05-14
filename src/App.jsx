@@ -24,8 +24,18 @@ render() {
         </Zoom>
       <div>
       <Zoom>{/*Using Zoom Effect*/}
+         <div className='App-header-over'>
+           <h1>About me</h1>
+         </div>
+        </Zoom>
+        <Zoom>{/*Using Zoom Effect*/}
          <div>
-           <h1>Hello World</h1>
+           <h1>My Work</h1>
+         </div>
+        </Zoom>
+        <Zoom>{/*Using Zoom Effect*/}
+         <div>
+           <h1>Contact</h1>
          </div>
         </Zoom>
       </div>
