@@ -169,7 +169,7 @@ draw(){
 
         if(pc%4 === 0){
           ctx.lineWidth = 2;
-          ctx.strokeStyle = 'rgba(100,192,203)';
+          ctx.strokeStyle = 'rgba(220,220,220)';
           ctx.lineTo(light.path[pc].x, light.path[pc].y);
         }
         else if(pc%3 === 0){
