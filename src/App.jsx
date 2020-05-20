@@ -29,11 +29,11 @@ render() {
          </div>
        
          <div>
-           <h1>My Work</h1>
+           {/* <h1>My Work</h1> */}
          </div>
               
          <div>
-           <h1>Contact</h1>
+           {/* <h1>Contact</h1> */}
          </div>
        </div>
     </div>

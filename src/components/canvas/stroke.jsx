@@ -174,12 +174,12 @@ draw(){
         }
         else if(pc%3 === 0){
           ctx.lineWidth = 1.5;
-          ctx.strokeStyle = 'rgba(200,152,200)';
+          ctx.strokeStyle = 'rgba(100,100,200)';
           ctx.lineTo(light.path[pc].x, light.path[pc].y);
         }
         else{
           ctx.lineWidth = 1;
-          ctx.strokeStyle = 'rgba(200,20,203)';
+          ctx.strokeStyle = 'rgba(100,100,203)';
           ctx.lineTo(light.path[pc].x, light.path[pc].y);
         }
       }
